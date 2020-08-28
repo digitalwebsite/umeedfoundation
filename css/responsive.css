@@ -3,7 +3,7 @@
 
 @media (max-width:1024px){
 .container,
-.block .container {padding: 0 15px;}
+.block .container {padding: 0 30px;}
 header {display: none;}
 .rsp-hdr {display: block;}
 .fnd-rsc {padding: 70px 50px;}

@@ -187,7 +187,7 @@ div.paddtb240-100 {
 }
 .gray .fixed-bg2 {z-index: 0;}
 .fixed-bg2 {
-    background-size:cover !important;
+    background-size:cover ;
     background-position:center !important;
 }
 .fixed-bg {

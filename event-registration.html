@@ -121,8 +121,23 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h3 itemprop="headline" style="font-variant-caps: small-caps;">Click The Gateway To Fill Out Form And Pay Registration Fees Of ₹50.</h3>
-                                            <div class='pm-button' style="margin-top:60px;"><a class="btn1" style="border-radius: 5px"  href='https://paynetzuat.atomtech.in/payment/form/pay.action?mId=43'>REGISTER AND PAY ₹50</a>
-                                                </div>
+        <div id="paytm-checkoutjs"></div>
+        <script type="application/javascript" crossorigin="anonymous" src="https://securegw.paytm.in/merchantpgpui/checkoutjs/merchants/dummyExampleMIDIdentifier.js" onload="onScriptLoad();"></script>
+        <script>
+            function onScriptLoad(){
+                if(window.Paytm && window.Paytm.CheckoutJS){
+                    window.Paytm.CheckoutJS.onLoad(function excecuteAfterCompleteLoad() {
+                        // initialze configuration using init method 
+                        window.Paytm.CheckoutJS.init(config).then(function onSuccess() {
+                            // after successfully updating configuration, invoke JS Checkout
+                            window.Paytm.CheckoutJS.invoke();
+                        }).catch(function onError(error){
+                            console.log("error => ",error);
+                        });
+                    });
+                }  
+            }   
+        </script>
                                         </div>
                                     </div>
 

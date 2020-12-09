@@ -121,41 +121,8 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h3 itemprop="headline" style="font-variant-caps: small-caps;">Click The Gateway To Fill Out Form And Pay Registration Fees Of ₹50.</h3>
-<script type="application/html" crossorigin="anonymous" src="https://securegw-stage.paytm.in/merchantpgpui/checkoutjs/merchants/aSDeTj27714677953069.js" onload="onScriptLoad();"> </script>
-<script>
-  function onScriptLoad(){
-      var config = {
-        "root": "",
-        "flow": "DEFAULT",
-        "data": {
-        "orderId": "", /* update order id */
-        "token": "", /* update token value */
-        "tokenType": "TXN_TOKEN",
-        "amount": "100" /* update amount */
-        },
-        "handler": {
-          "notifyMerchant": function(eventName,data){
-            console.log("notifyMerchant handler function called");
-            console.log("eventName => ",eventName);
-            console.log("data => ",data);
-          } 
-        }
-      };
-
-      if(window.Paytm && window.Paytm.CheckoutJS){
-          window.Paytm.CheckoutJS.onLoad(function excecuteAfterCompleteLoad() {
-              // initialze configuration using init method 
-              window.Paytm.CheckoutJS.init(config).then(function onSuccess() {
-                  // after successfully updating configuration, invoke JS Checkout
-                  window.Paytm.CheckoutJS.invoke();
-              }).catch(function onError(error){
-                  console.log("error => ",error);
-              });
-          });
-      } 
-  }
-</script>
-                                        
+                                            <div class='pm-button' style="margin-top:60px;"><a class="btn1" style="border-radius: 5px"  href='https://paytm.me/Qa-6D7E'>REGISTER AND PAY ₹50</a>
+                                                </div>
                                         </div>
                                     </div>
 
